@@ -1,0 +1,65 @@
+/* ===== 0. PENGATURAN UMUM (berlaku untuk seluruh halaman) ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Tahoma, sans-serif; background: #000; color: #ddd; }
+a { text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+
+/* ===== 1. HEADER (gaya GeForce NOW) ===== */
+
+/* Bar paling atas: "Games", kolom cari, akun */
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #121212; padding: 8px 16px; font-size: 13px; }
+.topbar .search { flex: 1; text-align: center; }
+.topbar input { width: 100%; max-width: 320px; padding: 7px 12px; background: #1e1e1e; color: #ddd; border: 1px solid #3a3a3a; border-radius: 3px; }
+.topbar .user { display: flex; align-items: center; gap: 8px; }
+.circle { width: 22px; height: 22px; border-radius: 50%; background-image: url(nervLogo.webp); background-position: center; background-size: cover; }
+
+.hero { position: relative; min-height: 420px; padding: 60px 40px; color: #fff; background: linear-gradient(90deg, rgba(0,0,0,.85) 0%, rgba(0,0,0,.4) 50%, rgba(0,0,0,0) 100%),url("wa.jpg") center right / cover no-repeat;
+}
+.hero h1 { text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.hero h1 { margin: 40px 0 10px; font-size: 44px; }
+.hero p { margin: 0 0 14px; font-size: 11px; }
+.btn { display: inline-block; background: #76b900; color: #000; font-weight: bold; font-size: 11px; padding: 8px 14px; border-radius: 2px; }
+
+
+/* ===== 2. BODY (gaya VNDB: biru gelap, kotak berbingkai biru) ===== */
+
+/* Pembungkus: sidebar di kiri, konten di kanan */
+.vndb { display: flex; align-items: flex-start; gap: 10px; background: #07121d; color: #c9d3dc; font-size: 12px; line-height: 1.5; padding: 10px; }
+.vndb a { color: #6db3ee; }
+.vndb a:hover { text-decoration: underline; }
+.muted { color: #7d8fa0; }
+
+/* Kotak umum (dipakai di sidebar dan konten) */
+.box { background: #0a1927; border: 1px solid #1f5a8f; padding: 6px 8px; }
+.box h2, .box h3 { margin: 0 0 4px; font-size: 13px; color: #9cc7ec; display: flex; justify-content: space-between; }
+.box h3 { font-size: 12px; }
+
+/* Sidebar kiri */
+.side { width: 130px; flex-shrink: 0; }
+.side .box { margin-bottom: 8px; }
+.side li a { display: block; }
+.side .sub { padding-left: 10px; }
+.side input { width: 100%; margin-top: 4px; background: #07121d; color: #ddd; border: 1px solid #1f5a8f; }
+.stats li { display: flex; justify-content: space-between; }
+
+/* Konten utama */
+.main { flex: 1; min-width: 0; }
+.main h1 { margin: 0 0 6px; font-size: 22px; font-weight: normal; color: #8fc0ec; }
+.intro { text-align: center; margin: 0 0 8px; }
+
+/* Baris berisi 3 kotak sejajar */
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+.cols li { padding: 1px 0; }
+
+/* ===== 3. FOOTER (gaya Genshin Impact: hitam, rata tengah) ===== */
+footer { background: #050505; color: #bbb; text-align: center; padding: 30px 16px 24px; font-size: 12px; }
+.lang { max-width: 1000px; margin: 0 auto 10px; text-align: right; }
+.lang select { background: #222; color: #fff; border: 0; padding: 8px 12px; border-radius: 3px; }
+.logo { font-family: Georgia, serif; font-size: 26px; letter-spacing: 6px; color: #eee; text-transform: uppercase; margin-bottom: 18px; }
+.flinks { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 20px; }
+.flinks a { color: #fff; }
+.flinks a:hover { text-decoration: underline;}
+
+.hoyo { font-size: 22px; letter-spacing: 8px; color: #fff; margin-bottom: 8px; }
+
